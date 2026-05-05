@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudNine Tech - Innovating Tomorrow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="logo">☁️ CloudNine Tech</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Innovating Tomorrow,<br>Today</h1>
+    <p>We build cutting-edge cloud solutions that transform businesses worldwide.</p>
+    <button class="cta" onclick="scrollToSection('contact')">Get Started</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Technology" class="hero-img">
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="about-grid">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600" alt="Teamwork">
+      <div class="about-text">
+        <p>Founded in 2019, CloudNine Tech has been at the forefront of cloud innovation. We help businesses scale with confidence through our enterprise-grade solutions.</p>
+        <div class="stats">
+          <div><span>500+</span><label>Clients</label></div>
+          <div><span>99.9%</span><label>Uptime</label></div>
+          <div><span>50+</span><label>Countries</label></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Cloud">
+        <h3>Cloud Infrastructure</h3>
+        <p>Scalable cloud solutions tailored to your needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400" alt="AI">
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent solutions that learn and adapt.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=400" alt="Security">
+        <h3>Cybersecurity</h3>
+        <p>Enterprise-grade security for your data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="team">
+  <div class="container">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="CEO">
+        <h3>Alex Chen</h3>
+        <p>CEO & Founder</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="CTO">
+        <h3>Sarah Johnson</h3>
+        <p>CTO</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Lead Developer">
+        <h3>Mike Roberts</h3>
+        <p>Lead Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Designer">
+        <h3>Emily Davis</h3>
+        <p>Design Director</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 CloudNine Tech. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
