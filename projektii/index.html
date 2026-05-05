@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Platforma për Mësim Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="brand-name">EduLearn</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-tab="home"><i class="fas fa-home"></i> Ballina</a></li>
+                <li><a href="#" class="nav-link" data-tab="courses"><i class="fas fa-book"></i> Kurset</a></li>
+                <li><a href="#" class="nav-link" data-tab="tests"><i class="fas fa-tasks"></i> Testet</a></li>
+                <li><a href="#" class="nav-link" data-tab="results"><i class="fas fa-chart-bar"></i> Rezultatet</a></li>
+                <li><a href="#" class="nav-link" data-tab="discussion"><i class="fas fa-comments"></i> Diskutime</a></li>
+            </ul>
+
+            <div class="nav-user">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" id="username" placeholder="Emri juaj" value="Student">
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="mobile-nav-link active" data-tab="home"><i class="fas fa-home"></i> Ballina</a></li>
+            <li><a href="#" class="mobile-nav-link" data-tab="courses"><i class="fas fa-book"></i> Kurset</a></li>
+            <li><a href="#" class="mobile-nav-link" data-tab="tests"><i class="fas fa-tasks"></i> Testet</a></li>
+            <li><a href="#" class="mobile-nav-link" data-tab="results"><i class="fas fa-chart-bar"></i> Rezultatet</a></li>
+            <li><a href="#" class="mobile-nav-link" data-tab="discussion"><i class="fas fa-comments"></i> Diskutime</a></li>
+        </ul>
+    </div>
+
+ 
+    <main class="main-content">
+      
+        <section id="home" class="tab-content active">
+          
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Mëso, Zhvillohuni, <span class="highlight">Keni Sukses</span></h1>
+                    <p>Platforma më e mirë për mësim online në shqip. Kurse cilësore, teste interaktive dhe komunitet aktiv.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" data-goto="courses">
+                            <i class="fas fa-play-circle"></i> Fillo të Mësosh
+                        </button>
+                        <button class="btn btn-outline btn-large" data-goto="tests">
+                            <i class="fas fa-pen"></i> Provoni Testet
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Kurse</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Video</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Pyetje</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>Programming</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-palette"></i>
+                        <span>Design</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-database"></i>
+                        <span>Database</span>
+                    </div>
+                </div>
+            </div>
+
+      
+            <div class="features-section">
+                <h2 class="section-title">Pse të zgjidhni EduLearn?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Cilësore</h3>
+                        <p>Mëso përmes video mësimesh të qarta dhe të detajuara nga instruktorë me përvojë.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Teste Interaktive</h3>
+                        <p>Testo njohuritë e tua me pyetje të shumë zgjedhje dhe rezultate të menjëhershme.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Komunitet Aktiv</h3>
+                        <p>Bisedo me nxënës të tjerë, ndaj mendime dhe merr përgjigje për pyetjet e tua.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certifikatë</h3>
+                        <p>Merr certifikatë pas përfundimit të kursit dhe testeve me sukses.</p>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="popular-section">
+                <div class="section-header">
+                    <h2 class="section-title">Kurse Popullore</h2>
+                    <button class="btn btn-primary" data-goto="courses">Shiko të gjitha <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="courses-preview" id="home-courses"></div>
+            </div>
+        </section>
+
+   
+        <section id="courses" class="tab-content">
+            <div class="page-header">
+                <h1><i class="fas fa-book"></i> Kurset Tona</h1>
+                <p>Zgjidhni nga kurset tona të shumta dhe filloni mësimin sot!</p>
+            </div>
+
+     
+            <div id="create-course-form" class="form-card" style="display:none;">
+                <div class="form-header">
+                    <h3><i class="fas fa-plus-circle"></i> Krijo Kurs të Ri</h3>
+                    <button class="btn btn-icon" id="hide-create-course"><i class="fas fa-times"></i></button>
+                </div>
+                <form id="course-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="course-title"><i class="fas fa-heading"></i> Titulli i Kursit</label>
+                            <input type="text" id="course-title" required placeholder="p.sh. Python për fillestarët">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-category"><i class="fas fa-tag"></i> Kategoria</label>
+                            <select id="course-category">
+                                <option value="programming">Programim</option>
+                                <option value="design">Dizajn</option>
+                                <option value="database">Bazat e të Dhënave</option>
+                                <option value="other">Tjetër</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="course-description"><i class="fas fa-align-left"></i> Përshkrimi</label>
+                        <textarea id="course-description" rows="4" placeholder="Përshkruani përmbajtjen e kursit..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Krijo Kursin</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-create-course">Anulo</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="section-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="course-search" placeholder="Kërko kurse...">
+                </div>
+                <button class="btn btn-primary" id="show-create-course">
+                    <i class="fas fa-plus"></i> Krijo Kurs
+                </button>
+            </div>
+
+            <div id="courses-list" class="courses-grid"></div>
+
+       
+            <div id="course-detail-modal" class="modal" style="display:none;">
+                <div class="modal-overlay"></div>
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h2 id="modal-course-title"></h2>
+                        <button class="modal-close" id="close-course-modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body" id="course-detail-content"></div>
+                </div>
+            </div>
+
+           
+            <div id="upload-modal" class="modal" style="display:none;">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><i class="fas fa-cloud-upload-alt"></i> Ngarko Material</h2>
+                        <button class="modal-close" id="close-upload-modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="upload-form">
+                            <input type="hidden" id="upload-course-id">
+                            <div class="form-group">
+                                <label for="material-title"><i class="fas fa-heading"></i> Titulli</label>
+                                <input type="text" id="material-title" required placeholder="Titulli i materialit...">
+                            </div>
+                            <div class="form-group">
+                                <label for="material-type"><i class="fas fa-file"></i> Lloji</label>
+                                <select id="material-type">
+                                    <option value="video">Video</option>
+                                    <option value="document">Dokument</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="material-file"><i class="fas fa-folder-open"></i> Zgjidhni skedën</label>
+                                <div class="file-upload-area" id="file-upload-area">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Klikoni ose tërhiqni skedën këtu</p>
+                                    <span class="file-types">MP4, AVI, PDF, DOC</span>
+                                    <input type="file" id="material-file" accept="video/*,.pdf,.doc,.docx,.txt,.ppt,.pptx" required>
+                                </div>
+                            </div>
+                            <div id="video-preview" style="display:none;">
+                                <video id="preview-video" controls style="max-width:100%;max-height:200px;border-radius:8px;"></video>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-upload"></i> Ngarko</button>
+                                <button type="button" class="btn btn-secondary" id="cancel-upload">Anulo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tests" class="tab-content">
+            <div class="page-header">
+                <h1><i class="fas fa-tasks"></i> Testet</h1>
+                <p>Testoni njohuritë tuaja me testet tona interaktive dhe merrni rezultate të menjëershme!</p>
+            </div>
+
+            <div class="tests-info-banner">
+                <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+                <div class="info-text">
+                    <h4>Cila është qëllimi i këtyre testeve?</h4>
+                    <p>Testet janë krijuar për t'ju ndihmuar të vlerësoni njohuritë tuaja në fusha të ndryshme të programimit dhe teknologjisë. Përgjigjuni pyetjeve dhe shihni rezultatin tuaj menjëherë!</p>
+                </div>
+            </div>
+
+            <div id="tests-list" class="tests-grid"></div>
+
+            <div id="test-modal" class="modal" style="display:none;">
+                <div class="modal-overlay"></div>
+                <div class="modal-content modal-large">
+                    <div class="modal-header">
+                        <h2 id="test-modal-title"></h2>
+                        <button class="modal-close" id="close-test-modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body" id="test-content"></div>
+                </div>
+            </div>
+
+            <div id="result-modal" class="modal" style="display:none;">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><i class="fas fa-trophy"></i> Rezultati Juaj</h2>
+                        <button class="modal-close" id="close-result-modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body" id="result-content"></div>
+                </div>
+            </div>
+        </section>
+        <section id="results" class="tab-content">
+            <div class="page-header">
+                <h1><i class="fas fa-chart-bar"></i> Rezultatet</h1>
+                <p>Shikoni historinë e rezultateve të të gjitha testeve që keni kryer.</p>
+            </div>
+
+            <div class="results-summary" id="results-summary"></div>
+            <div id="results-list" class="results-table-container"></div>
+        </section>
+
+        <section id="discussion" class="tab-content">
+            <div class="page-header">
+                <h1><i class="fas fa-comments"></i> Diskutime</h1>
+                <p>Bashkohuni në diskutime, ndani mendimet tuaja dhe merrni përgjigje për pyetjet.</p>
+            </div>
+
+            <div class="comment-form-card">
+                <div class="comment-form-header">
+                    <div class="user-avatar-large">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group flex-grow">
+                        <textarea id="comment-content" placeholder="Çfarë dëshironi të pyesni ose të ndani?" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="comment-form-footer">
+                    <div class="form-group-inline">
+                        <label><i class="fas fa-book"></i> Lidhe me kurs:</label>
+                        <select id="comment-course">
+                            <option value="">-- Diskutim i përgjithshëm --</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" id="submit-comment">
+                        <i class="fas fa-paper-plane"></i> Publiko
+                    </button>
+                </div>
+            </div>
+
+            <div class="comments-filter">
+                <button class="filter-btn active" data-filter="all">Të gjitha</button>
+                <button class="filter-btn" data-filter="general">Të përgjithshme</button>
+                <button class="filter-btn" data-filter="course">Për kurset</button>
+            </div>
+
+            <div id="comments-list" class="comments-container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduLearn</span>
+                </div>
+                <p>Platforma më e mirë për mësim online në gjuhën shqipe.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Linqe të shpejta</h4>
+                <ul>
+                    <li><a href="#" data-goto="home"><i class="fas fa-home"></i> Ballina</a></li>
+                    <li><a href="#" data-goto="courses"><i class="fas fa-book"></i> Kurset</a></li>
+                    <li><a href="#" data-goto="tests"><i class="fas fa-tasks"></i> Testet</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@edulearn.com</li>
+                    <li><i class="fas fa-phone"></i> +355 4 123 4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Prishtine, Kosove</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EduLearn. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
