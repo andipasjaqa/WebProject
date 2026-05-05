@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); font-family: 'Segoe UI', sans-serif; }
+h1 { color: #eee; margin-bottom: 40px; font-size: 36px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.drums { display: grid; grid-template-columns: repeat(4, 110px); gap: 20px; }
+.drum { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: 3px solid rgba(255,255,255,0.2); border-radius: 15px; padding: 25px; text-align: center; cursor: pointer; transition: all 0.1s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+.drum kbd { display: block; font-size: 36px; color: #f093fb; margin-bottom: 8px; font-weight: bold; }
+.drum span { color: #eee; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+.drum.active { transform: scale(1.15); border-color: #f093fb; box-shadow: 0 0 30px rgba(240,147,251,0.6); background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.drum:hover { transform: scale(1.05); }

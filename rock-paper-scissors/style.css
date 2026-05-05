@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); font-family: 'Segoe UI', sans-serif; }
+h1 { color: white; margin-bottom: 40px; font-size: 48px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.choices { display: flex; gap: 25px; margin-bottom: 40px; }
+.choices button { padding: 30px 40px; font-size: 24px; border: none; border-radius: 20px; cursor: pointer; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.2); font-weight: 600; }
+.choices button:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+.result { text-align: center; color: white; font-size: 20px; background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px); }
+#winner { font-size: 42px; margin: 20px 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+#playerChoice, #computerChoice { margin: 10px 0; font-size: 22px; }
+#score { font-size: 24px; margin-top: 15px; font-weight: 600; }
